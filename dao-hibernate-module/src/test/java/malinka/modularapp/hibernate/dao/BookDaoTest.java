@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 /**
  * Test book data access object
  *
- * @author Phann Malinka
+ * @author Malinka Phann
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class BookDaoTest {

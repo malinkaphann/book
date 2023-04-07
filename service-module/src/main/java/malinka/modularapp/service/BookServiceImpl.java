@@ -3,7 +3,6 @@ package malinka.modularapp.service;
 import malinka.modularapp.common.exception.ResourceNotFoundException;
 import malinka.modularapp.dao.BookDao;
 import malinka.modularapp.entity.Book;
-
 import java.util.List;
 import java.util.Optional;
 

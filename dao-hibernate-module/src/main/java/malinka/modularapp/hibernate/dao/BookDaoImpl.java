@@ -156,7 +156,7 @@ public class BookDaoImpl implements BookDao {
             found.setTitle(book.getTitle());
             em.getTransaction().commit();
         } catch(ResourceNotFoundException e) {
-            throw new ResourceNotFoundException(e);
+            throw new ResourceNotFoundException(e.getMessage());
         } catch(Exception e) {
             throw new DatabaseException(e);
         }
@@ -189,7 +189,7 @@ public class BookDaoImpl implements BookDao {
             em.remove(bookToDelete);
             em.getTransaction().commit();
         } catch(ResourceNotFoundException e) {
-            throw new ResourceNotFoundException(e);
+            throw new ResourceNotFoundException(e.getMessage());
         } catch(Exception e) {
             throw new DatabaseException(e);
         }
